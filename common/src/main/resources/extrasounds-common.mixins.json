@@ -1,0 +1,27 @@
+{
+  "required": true,
+  "minVersion": "0.8",
+  "package": "dev.stashy.extrasounds.mixin",
+  "compatibilityLevel": "JAVA_16",
+  "client": [
+    "BucketFluidAccessor",
+    "ChatSound",
+    "EffectMixin",
+    "HotbarScrollSound",
+    "HotbarSlotSound",
+    "ItemPickSound",
+    "KeyboardTypingSound",
+    "ReloadableResourceManagerImplMixin",
+    "inventory.CreativeInventoryClickSounds",
+    "inventory.CreativeListScroll",
+    "inventory.InventoryClickSounds",
+    "inventory.InventoryDragSound",
+    "inventory.InventoryDropSound",
+    "inventory.InventoryScreenSounds"
+  ],
+  "mixins": [
+  ],
+  "injectors": {
+    "defaultRequire": 1
+  }
+}

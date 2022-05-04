@@ -1,0 +1,34 @@
+{
+  "schemaVersion": 1,
+  "id": "extrasounds",
+  "version": "${version}",
+  "name": "Extra Sounds",
+  "description": "Adds more sounds to Minecraft UI.",
+  "authors": [
+    "stashymane"
+  ],
+  "contact": {
+    "homepage": "https://github.com/SpatialParadox",
+    "sources": "https://github.com/SpatialParadox/extra-sounds",
+    "issues": "https://github.com/SpatialParadox/extra-sounds/issues"
+  },
+  "license": "CC0",
+  "icon": "icon.png",
+  "environment": "client",
+  "entrypoints": {
+    "main": [
+      "dev.stashy.extrasounds.fabric.ExtraSoundsFabric"
+    ],
+    "modmenu": [
+      "dev.stashy.extrasounds.fabric.config.ExtraSoundsModMenu"
+    ]
+  },
+  "mixins": [
+    "extrasounds-common.mixins.json"
+  ],
+  "depends": {
+    "fabric": "*",
+    "minecraft": ">=1.18.2",
+    "architectury": ">=4.2.50"
+  }
+}

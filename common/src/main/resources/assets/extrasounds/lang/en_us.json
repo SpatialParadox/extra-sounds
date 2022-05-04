@@ -1,0 +1,21 @@
+{
+  "text.autoconfig.extrasounds.title": "Extra Sounds",
+  "text.autoconfig.extrasounds.category.inventory": "Inventory",
+  "text.autoconfig.extrasounds.option.inventory.volume": "Volume",
+  "text.autoconfig.extrasounds.option.inventory.click": "Click",
+  "text.autoconfig.extrasounds.option.inventory.drag": "Drag sound",
+  "text.autoconfig.extrasounds.option.inventory.drop": "Drop sound",
+  "text.autoconfig.extrasounds.option.inventory.open": "Open/close sound",
+
+  "text.autoconfig.extrasounds.category.scroll": "Scroll",
+  "text.autoconfig.extrasounds.option.scroll.volume": "Volume",
+  "text.autoconfig.extrasounds.option.scroll.hotbarScroll": "Hotbar scroll",
+
+  "text.autoconfig.extrasounds.category.effects": "Effects",
+  "text.autoconfig.extrasounds.option.effects.volume": "Volume",
+
+  "text.autoconfig.extrasounds.category.chat": "Chat",
+  "text.autoconfig.extrasounds.option.chat.volume": "Volume",
+  "text.autoconfig.extrasounds.option.chat.mention": "Mention sound",
+  "text.autoconfig.extrasounds.option.chat.typing": "Typing sound"
+}

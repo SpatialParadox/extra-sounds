@@ -1,0 +1,35 @@
+modLoader = "javafml"
+loaderVersion = "[40,)"
+issueTrackerURL = "https://github.com/SpatialParadox/extra-sounds/issues"
+license = "CC0"
+
+[[mods]]
+modId = "extrasounds"
+version = "${version}"
+displayName = "Extra Sounds"
+authors = "stashymane"
+description = '''
+Adds more sounds to Minecraft UI.
+'''
+logoFile = "icon.png"
+
+[[dependencies.extrasounds]]
+modId = "forge"
+mandatory = true
+versionRange = "[40,)"
+ordering = "NONE"
+side = "BOTH"
+
+[[dependencies.extrasounds]]
+modId = "minecraft"
+mandatory = true
+versionRange = "[1.18.2,)"
+ordering = "NONE"
+side = "BOTH"
+
+[[dependencies.extrasounds]]
+modId = "architectury"
+mandatory = true
+versionRange = "[4.2.50,)"
+ordering = "AFTER"
+side = "BOTH"
