@@ -1,6 +1,7 @@
 package dev.stashy.extrasounds.mixin.inventory;
 
 import dev.stashy.extrasounds.SoundManager;
+import dev.stashy.extrasounds.config.ConfigHandler;
 import dev.stashy.extrasounds.sound.SoundTypeCategory;
 import dev.stashy.extrasounds.sound.Sounds;
 import net.minecraft.client.gui.screen.ingame.CreativeInventoryScreen;
@@ -17,6 +18,10 @@ public class CreativeListScroll {
 
     @ModifyVariable(method = "scrollItems", at = @At("STORE"), ordinal = 1)
     int scroll(int position) {
+        if (!ConfigHandler.getConfig().getScroll().isInventoryScrollEnabled()) {
+            return position;
+        }
+
         long now = System.currentTimeMillis();
         long timeDiff = now - lastTime;
         if (timeDiff > 20 && lastPos != position && !(lastPos != 1 && position == 0)) {

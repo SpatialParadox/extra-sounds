@@ -2,13 +2,14 @@
   "text.autoconfig.extrasounds.title": "Extra Sounds",
   "text.autoconfig.extrasounds.category.inventory": "Inventory",
   "text.autoconfig.extrasounds.option.inventory.volume": "Volume",
-  "text.autoconfig.extrasounds.option.inventory.click": "Click",
+  "text.autoconfig.extrasounds.option.inventory.click": "Click sound",
   "text.autoconfig.extrasounds.option.inventory.drag": "Drag sound",
   "text.autoconfig.extrasounds.option.inventory.drop": "Drop sound",
   "text.autoconfig.extrasounds.option.inventory.open": "Open/close sound",
 
   "text.autoconfig.extrasounds.category.scroll": "Scroll",
   "text.autoconfig.extrasounds.option.scroll.volume": "Volume",
+  "text.autoconfig.extrasounds.option.scroll.inventoryScroll": "Inventory scroll",
   "text.autoconfig.extrasounds.option.scroll.hotbarScroll": "Hotbar scroll",
 
   "text.autoconfig.extrasounds.category.effects": "Effects",

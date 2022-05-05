@@ -7,11 +7,18 @@ public class ScrollCategory implements IScrollCategory {
     @ConfigEntry.BoundedDiscrete(max = 100)
     int volume = 100;
 
+    boolean inventoryScroll = true;
+
     boolean hotbarScroll = true;
 
     @Override
     public int getMasterVolume() {
         return volume;
+    }
+
+    @Override
+    public boolean isInventoryScrollEnabled() {
+        return inventoryScroll;
     }
 
     @Override
