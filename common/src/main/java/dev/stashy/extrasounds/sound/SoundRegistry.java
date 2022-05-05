@@ -1,19 +1,22 @@
 package dev.stashy.extrasounds.sound;
 
-import dev.architectury.registry.registries.Registrar;
 import dev.stashy.extrasounds.ExtraSounds;
 import net.minecraft.sound.SoundEvent;
 import net.minecraft.util.Identifier;
-import net.minecraft.util.registry.Registry;
+
+import java.util.HashMap;
+import java.util.Map;
 
 public class SoundRegistry {
-    public static final Registrar<SoundEvent> SOUND_EVENTS = ExtraSounds.REGISTRIES.get()
-            .get(Registry.SOUND_EVENT_KEY);
+    // Using a map here, as (for some reason) the Registry is overwritten on Forge upon joining a Forge server.
+    // This might be related to it syncing with the server (?). This still works in effectively the same way as the
+    // but may break some things if we allow mod developers to add custom sounds.
+    public static final Map<Identifier, SoundEvent> SOUND_EVENTS = new HashMap<>();
 
 
     public static SoundEvent register(Identifier id) {
         var e = new SoundEvent(id);
-        SOUND_EVENTS.register(id, () -> e);
+        SOUND_EVENTS.put(id, e);
         return e;
     }
 

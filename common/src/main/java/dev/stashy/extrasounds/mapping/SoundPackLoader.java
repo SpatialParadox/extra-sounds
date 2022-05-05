@@ -42,7 +42,7 @@ public class SoundPackLoader {
 
         var itemMap = Registry.ITEM.getIds().stream().map(id -> {
             var sndId = new Identifier(ExtraSounds.MOD_ID, ExtraSounds.getClickId(id, false));
-            if (!Registry.SOUND_EVENT.containsId(sndId)) {
+            if (!SoundRegistry.SOUND_EVENTS.containsKey(sndId)) {
                 SoundRegistry.register(sndId);
             }
 
