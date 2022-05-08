@@ -1,5 +1,16 @@
 # Changelog
 
+## [2.2.2] - 2022-05-08
+Ported to use Architectury, supporting both Fabric and Forge.
+
+### Changed
+
+* Mod now uses Cloth Config
+
+### Removed
+
+* Custom sounds for mod developers
+
 ## [2.2.1] - 2022-03-04
 
 ### Added
