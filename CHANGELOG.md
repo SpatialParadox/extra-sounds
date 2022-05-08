@@ -3,6 +3,10 @@
 ## [2.2.2] - 2022-05-08
 Ported to use Architectury, supporting both Fabric and Forge.
 
+### Added
+
+* More extensive config
+
 ### Changed
 
 * Mod now uses Cloth Config
