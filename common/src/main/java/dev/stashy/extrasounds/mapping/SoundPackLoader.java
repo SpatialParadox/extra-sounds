@@ -33,7 +33,7 @@ public class SoundPackLoader {
             .registerTypeAdapter(Sound.class, new SoundSerializer())
             .create();
 
-    public static void init() {
+    private static void registerItemSounds() {
         // Original mod used Fabric entrypoints to achieve this; Forge doesn't have these, so we'll define this manually.
         // This could be solved by providing an API for other mods to include their own sound generators, but this is
         // out of scope for now.
@@ -66,8 +66,13 @@ public class SoundPackLoader {
         DebugUtils.exportSoundsJson(json);
         DebugUtils.exportGenerators();
         genericPack.addResource(ResourceType.CLIENT_RESOURCES, soundsJsonId, json);
+    }
 
+    public static void init() {
         ResourcePackCallback.BEFORE_VANILLA.register((packs) -> {
+            // This assumes all mods have already registered their items before this is called
+            // Usually this is the case, but some mods may register them later (?)
+            registerItemSounds();
             packs.add(genericPack);
         });
     }
